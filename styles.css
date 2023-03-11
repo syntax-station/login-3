@@ -1,0 +1,160 @@
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url(images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.login {
+  background-color: #ffffff;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  width: 400px;
+}
+
+h1 {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+span {
+    color: #8c8585;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: #666;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.input-username, .input-password{
+    display: flex;
+    align-items: center;
+}
+
+.input-username, .input-password i{
+  color: gray;
+  font-size: 20px;
+ 
+}
+
+
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #999;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+
+hr {
+  background-color: #ddd;
+  border: none;
+  height: 1px;
+  margin: 20px 0;
+}
+
+button {
+  background: #cb9339;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.login-button{
+  padding-top: 20px;
+}
+
+button:hover {
+  background-color: #c58008;
+  transform: scale(1.05);
+}
+
+
+
+.icons {
+  cursor: pointer;  
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.icons i {
+  font-size: 24px; 
+  color: gray;
+  margin: 10px;
+  transition: all 0.2s ease-in-out;
+  }
+
+.fa-facebook:hover {
+  color: #1877f2; 
+}
+  
+.fa-twitter:hover {
+  color: #1da1f2; 
+}
+  
+.fa-google:hover {
+  color: #e50a0a;
+  }
+
+
+@keyframes spin {
+  to {transform: rotate(360deg);}
+  }
+
+.sign-up {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sign-up a {
+  color: #d37510;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sign-up a:hover {
+  color: #c5650b;
+}
+
+
